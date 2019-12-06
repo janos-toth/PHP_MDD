@@ -1,0 +1,121 @@
+.form-inline{
+    margin: 15px;
+}
+.navbar{
+    background-color: #555;
+    border-radius: 0px;
+}
+.navbar-brand{
+    color: #fff;
+}
+h2{
+    margin-left: 2%;
+}
+.jumbotron{
+    border: 2px solid #ddd;
+}
+#plsWait{
+  text-align: center;
+}
+#plsWait>img{
+    width: 25%;
+} 
+.container{
+    margin: 0px;
+    width: 100%;
+}
+.qstBorder{
+    border-top: 2px solid #000;
+    -webkit-box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.20);
+    -moz-box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.20);
+    box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.20)   
+    
+}
+#topButton {
+    display: inline-block;
+    background-color: #555;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #topButton::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #67982e;
+  }
+  #topButton:hover {
+    cursor: pointer;
+    background-color: #6c767a;
+  }
+  #topButton:active {
+    background-color: #555;
+  }
+  #topButton.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  @media (min-width: 500px) {
+    #topButton {
+      margin: 30px;
+    }
+  }
+  navbar-brand a:hover, navbar-brand a:focus{
+      color: #67982e;
+  }
+  .navbar-brand>img{
+      display: inline;
+      width: 50px;
+      margin-right: 10px;
+  }
+  .navbar-brand{
+      height: auto;
+  }
+  a{
+      color:#67982e;
+  }
+  a:hover, a:focus{
+    color: #67982e;
+}
+  .container a:focus, .container a:hover{
+    color: #555;
+  }
+  .subQstBorder{
+      cursor: pointer;
+  }
+  .caretDown, .caretUp{
+      padding-right: 5%;
+  }
+  .caretDown::after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.3em;
+  }
+  .caretUp::after {
+    content: "\f0d8";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.3em;
+  }
+  
+int {
+  font-size:1em;
+  display: inline-block;
+  color: #a0b100;
+}
