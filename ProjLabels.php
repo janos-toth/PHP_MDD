@@ -44,6 +44,8 @@ if(isset($_POST["project_code"])){
     <link rel="stylesheet" href="CSS/style.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <script src="JS/xlsx.full.min.js" ></script>
+    <script src="JS/fileSaver.js" ></script>
     <script src="JS/coreJS.js" ></script>
     <title>II. JANI CÁR PÁPA</title>
 </head>
@@ -60,6 +62,7 @@ if(isset($_POST["project_code"])){
     <input type="text" class="form-control" id="formGroupExampleInput" name="project_code" placeholder="Enter Project code...">
   </div>
   <button type="submit" class="btn btn-primary GetProject">Get Labels!</button>
+  <button class="btn my-2" id="button-a">Download</button>
 </form>
 
 <!--PROJECT NAME -->
@@ -99,7 +102,7 @@ if(isset($_POST["project_code"])){
   </ul>
 </div>
 <!--TABLE -->
-<table class="table">
+<table class="table" id="tableToDownload">
   <thead class="thead-dark">
     <tr>
         <th scope="col">#</th>
