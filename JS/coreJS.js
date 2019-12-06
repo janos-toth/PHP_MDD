@@ -75,7 +75,8 @@ $(window).load(function(){
         for (var i=0; i<s.length; i++) view[i] = s.charCodeAt(i) & 0xFF;
         return buf;
     }
-    $("#button-a").click(function(){
+    $("#button-a").click(function(e){
+        e.preventDefault();
         saveAs(new Blob([s2ab(wbout)],{type:"application/octet-stream"}), 'questionnaire.xlsx');
     });
 })
