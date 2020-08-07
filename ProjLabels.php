@@ -24,6 +24,7 @@ if(isset($_GET["project"])){
   $projName = "";
 }
 
+
 if(isset($_POST["project_code"])){
   header('Location: ProjLabels.php?project=' . $_POST["project_code"]);
   return;
